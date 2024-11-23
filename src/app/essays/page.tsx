@@ -10,7 +10,7 @@ export default function EssaysPage() {
         <CardHeader>
           <CardTitle>Coming Soon</CardTitle>
           <CardDescription>
-            I haven't written any essays yet, but I have plans to start sharing my thoughts and experiences soon. Stay tuned!
+            I haven&apos;t written any essays yet, but I have plans to start sharing my thoughts and experiences soon. Stay tuned!
           </CardDescription>
         </CardHeader>
       </Card>
