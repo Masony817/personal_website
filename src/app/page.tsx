@@ -106,7 +106,7 @@ export default function Home() {
         </p>
         <div className="flex space-x-4">
           <Button asChild>
-            <Link href="/projects">View My Projects</Link>
+            <Link href="/work">View My Projects</Link>
           </Button>
           <Button asChild variant="outline">
             <Link href="mailto:masony817@gmail.com">Contact Me</Link>
