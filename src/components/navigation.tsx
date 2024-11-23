@@ -7,9 +7,8 @@ import { cn } from "../lib/utils"
 import ModeToggle from "./mode-toggle"
 
 const navItems = [
-  { href: "/experience", label: "Experience" },
+  { href: "/work", label: "Work" },
   { href: "/essays", label: "Essays" },
-  { href: "/photos", label: "Photos" },
 ]
 
 export function Navigation() {
@@ -36,7 +35,7 @@ export function Navigation() {
           ))}
           <div className="flex items-center space-x-1">
             <Link
-              href="https://github.com/masonyarbrough"
+              href="https://github.com/masony817"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground"
@@ -45,7 +44,7 @@ export function Navigation() {
               <span className="sr-only">GitHub</span>
             </Link>
             <Link
-              href="https://twitter.com/masonyarbrough"
+              href="https://twitter.com/masony817"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground"

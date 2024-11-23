@@ -1,13 +1,17 @@
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
-
+import Technologies from "@/components/Technologies"
+import Image from "next/image"
 export default function Home() {
-  const skills = [
+  // Define two distinct arrays of skills
+  const skillsRow1 = [
     "Python", "Dart", "JavaScript", "TypeScript", "Java",
-    "Flutter", "React", "React Native", "Django", "Node.js",
-    "Supabase", "PostgreSQL", "Firebase", "MongoDB",
-    "TensorFlow", "LLMs", "OpenAI API", "Prompt Engineering"
+    "Flutter", "React", "React Native", "Django",
+  ]
+
+  const skillsRow2 = [
+    "Nodejs", "Supabase", "PostgreSQL", "Firebase", "MongoDB",
+    "Go", "TensorFlow", "LLMs", "OpenAI API",
   ]
 
   return (
@@ -15,83 +19,97 @@ export default function Home() {
       <div className="space-y-4">
         <h1 className="text-4xl font-bold">Mason Yarbrough</h1>
         <p className="text-lg text-muted-foreground">
-          Full-Stack Product Engineer and Co-Founder passionate about AI-driven solutions and scalable applications.
+          Founder and Full-Stack Product Engineer building AI that improves the way humans interact with technology.
         </p>
       </div>
 
-      <div className="space-y-4 leading-relaxed">
+      <div className="space-y-4 leading-relaxed text-gray-300">
         <p>
-          Working at <Link href="#" className="text-primary hover:underline">BuyNothing, Inc.</Link>, 
-          where I design and implement AI-driven features to improve user experiences and optimize workflows.
-        </p>
-        
-        <p>
-          Creator of{" "}
-          <Link href="#" className="text-primary hover:underline">GoLocal</Link>, an AI-driven local experience marketplace, and{" "}
-          <Link href="#" className="text-primary hover:underline">AdScratch</Link>, a gamified consumer advertising platform.
+          I&apos;m currently working on <Link href="#" className="text-primary hover:underline font-semibold transition-colors duration-200">Kallro</Link>, an AI-driven platform that enhances business phone systems, making customer interactions smoother and more efficient.
         </p>
 
         <p>
-          I specialize in scaling applications and improving user engagement through AI integration. My journey has taken me from founding startups to increasing monthly recurring revenue for established companies.
+          I&apos;m also helping build AI features at <Link href="#" className="text-primary hover:underline font-semibold transition-colors duration-200">BuyNothing</Link>, a platform that connects local communities by facilitating hyperlocal gifting and sharing.
         </p>
 
         <p>
-          I write <Link href="/essays" className="text-primary hover:underline">essays</Link> about software development, AI, and entrepreneurship.
-          You can find my open-source projects on{" "}
-          <Link href="https://github.com/masonyarbrough" className="text-primary hover:underline">GitHub</Link>.
+          Before these, I created <Link href="#" className="text-primary hover:underline font-semibold transition-colors duration-200">GoLocal</Link>, a marketplace for discovering local experiences, and <Link href="#" className="text-primary hover:underline font-semibold transition-colors duration-200">AdScratch</Link>, a gamified advertising platform that connects brands with users in a fun and engaging way.
+        </p>
+
+        <p>
+          When I&apos;m not coding, I write <Link href="/essays" className="text-primary hover:underline font-semibold transition-colors duration-200">essays</Link> about software development, AI, and entrepreneurship. You can find my open-source projects on <Link href="https://github.com/masonyarbrough" className="text-primary hover:underline font-semibold transition-colors duration-200">GitHub</Link>.
         </p>
       </div>
 
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold">Technologies</h2>
-        <div className="flex flex-wrap gap-3">
-          {skills.map((tech) => (
-            <div 
-              key={tech}
-              className="inline-flex items-center space-x-1 text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              <Image 
-                src={`/logos/${tech.toLowerCase().replace(/\s/g, '-')}.svg`}
-                alt=""
-                width={16}
-                height={16}
-                className="opacity-75 group-hover:opacity-100"
-              />
-              <span>{tech}</span>
-            </div>
-          ))}
+      <div className="space-y-6 p-6 rounded-lg bg-card shadow-md dark:bg-card/80 border border-border/30 mx-auto max-w-3xl overflow-hidden">
+        <h2 className="text-2xl font-semibold text-center">Technologies</h2>
+        <div className="relative overflow-hidden">
+          <div className="flex flex-col gap-4">
+            {/* Row 1 */}
+            <Technologies skills={skillsRow1} animationClass="animate-scroll-left-1" keySuffix="row1" />
+            {/* Row 2 */}
+            <Technologies skills={skillsRow2} animationClass="animate-scroll-left-2" keySuffix="row2" />
+          </div>
         </div>
       </div>
 
       <section className="space-y-8">
-        <h2 className="text-2xl font-semibold">Featured Work</h2>
-        <ul className="space-y-4">
-          <li className="flex items-baseline gap-4">
-            <span className="text-muted-foreground font-medium w-32">BuyNothing, Inc.</span>
-            <span>Scaled user base from 1 million to 5 million with AI-driven features</span>
-          </li>
-          <li className="flex items-baseline gap-4">
-            <span className="text-muted-foreground font-medium w-32">GoLocal, Inc.</span>
-            <span>Led development of AI-driven local experience marketplace</span>
-          </li>
-          <li className="flex items-baseline gap-4">
-            <span className="text-muted-foreground font-medium w-32">AdScratch LLC</span>
-            <span>Developed gamified consumer advertising platform</span>
-          </li>
-        </ul>
+        <h2 className="text-2xl font-semibold text-center mb-6">Featured Work</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-card dark:bg-card/80 border border-border/30 rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105">
+            <div className="flex items-center mb-2">
+              <div className="w-6 h-6 mr-2">
+                <Image src="/logos/kallro-logo.svg" alt="Kallro Logo" width={24} height={24} />
+              </div>
+              <h3 className="text-xl font-semibold">Kallro</h3>
+            </div>
+            <p className="text-muted-foreground mb-4">Developing an AI-driven platform for B2B phone management</p>
+            <Link href="#" className="text-primary hover:underline text-sm">Learn more →</Link>
+          </div>
+          <div className="bg-card dark:bg-card/80 border border-border/30 rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105">
+            <div className="flex items-center mb-2">
+              <div className="w-6 h-6 mr-2">
+                <Image src="/logos/buynothing-logo.png" alt="BuyNothing Logo" width={24} height={24} />
+              </div>
+              <h3 className="text-xl font-semibold">BuyNothing, Inc.</h3>
+            </div>
+            <p className="text-muted-foreground mb-4">Building AI-driven features and user funnels for hyperlocal gifting</p>
+            <Link href="https://buynothingproject.org/" className="text-primary hover:underline text-sm">Learn more →</Link>
+          </div>
+          <div className="bg-card dark:bg-card/80 border border-border/30 rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105">
+            <div className="flex items-center mb-2">
+              <div className="w-6 h-6 mr-2">
+                <Image src="/logos/golocal-logo.svg" alt="GoLocal Logo" width={24} height={24} />
+              </div>
+              <h3 className="text-xl font-semibold">GoLocal, Inc.</h3>
+            </div>
+            <p className="text-muted-foreground mb-4">Led development of AI-driven local experience marketplace</p>
+            <Link href="#" className="text-primary hover:underline text-sm">Learn more →</Link>
+          </div>
+          <div className="bg-card dark:bg-card/80 border border-border/30 rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105">
+            <div className="flex items-center mb-2">
+              <div className="w-6 h-6 mr-2">
+                <Image src="/logos/adscratch_logo.png" alt="AdScratch Logo" width={24} height={24} />
+              </div>
+              <h3 className="text-xl font-semibold">AdScratch LLC</h3>
+            </div>
+            <p className="text-muted-foreground mb-4">Developed gamified consumer advertising platform</p>
+            <Link href="#" className="text-primary hover:underline text-sm">Learn more →</Link>
+          </div>
+        </div>
       </section>
 
-      <section className="space-y-6">
+      <section className="space-y-6 flex flex-col items-center text-center">
         <h2 className="text-2xl font-semibold">Get in Touch</h2>
-        <p className="text-muted-foreground">
-          Feel free to reach out if you'd like to collaborate on a project, discuss technology, or just have a chat about the latest in AI and software development.
+        <p className="text-muted-foreground max-w-lg">
+          Feel free to reach out if you&apos;d like to help me build Kallro, discuss technology, or just want to talk.
         </p>
         <div className="flex space-x-4">
           <Button asChild>
             <Link href="/projects">View My Projects</Link>
           </Button>
           <Button asChild variant="outline">
-            <Link href="mailto:mason@example.com">Contact Me</Link>
+            <Link href="mailto:masony817@gmail.com">Contact Me</Link>
           </Button>
         </div>
       </section>
@@ -99,7 +117,7 @@ export default function Home() {
       <div className="pt-8">
         <p className="text-sm text-muted-foreground">
           If you find my work useful, consider{" "}
-          <Link href="/sponsors" className="text-primary hover:underline">
+          <Link href="https://venmo.com/u/Masony0817" className="text-primary hover:underline">
             sponsoring me
           </Link>{" "}
           to help me continue building open source software.

@@ -60,7 +60,21 @@ const config: Config = {
   				'5': 'hsl(var(--chart-5))'
   			}
   		}
-  	}
+  	},
+  	keyframes: {
+  		'scroll-left-1': {
+  			'0%': { transform: 'translateX(0)' },
+  			'100%': { transform: 'translateX(-50%)' },
+  		},
+  		'scroll-left-2': {
+  			'0%': { transform: 'translateX(0)' },
+  			'100%': { transform: 'translateX(-50%)' },
+  		},
+  	},
+  	animation: {
+  		'scroll-left-1': 'scroll-left-1 35s linear infinite',
+  		'scroll-left-2': 'scroll-left-2 40s linear infinite',
+  	},
   },
   plugins: [require("tailwindcss-animate")],
 }
