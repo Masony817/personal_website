@@ -76,6 +76,9 @@ const config: Config = {
   		'scroll-left-2': 'scroll-left-2 40s linear infinite',
   	},
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+	require("tailwindcss-animate"),
+	require("@tailwindcss/typography"),
+	],
 }
 export default config

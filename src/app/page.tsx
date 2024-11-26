@@ -37,7 +37,7 @@ export default function Home() {
         </p>
 
         <p>
-          When I&apos;m not coding, I write <Link href="/essays" className="text-primary hover:underline font-semibold transition-colors duration-200">essays</Link> about software development, AI, and entrepreneurship. You can find my open-source projects on <Link href="https://github.com/masonyarbrough" className="text-primary hover:underline font-semibold transition-colors duration-200">GitHub</Link>.
+          When I&apos;m not coding, I write <Link href="/essays" className="text-primary hover:underline font-semibold transition-colors duration-200">essays</Link> about AI, Entrepreneurship, and whatever interests me when I start writing. You can find my open-source projects on <Link href="https://github.com/masonyarbrough" className="text-primary hover:underline font-semibold transition-colors duration-200">GitHub</Link>.
         </p>
       </div>
 
