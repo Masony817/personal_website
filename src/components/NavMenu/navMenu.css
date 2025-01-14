@@ -1,0 +1,71 @@
+.nav-menu {
+    background-color: white;
+    border-radius: 15px;
+    padding: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 296px;
+  }
+  
+  .kallro-link, .menu-item {
+    padding: 15px 0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-family: 'Circular';
+    font-size: 24px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  .kallro-link {
+    gap: 12px;
+    border-bottom: 1px solid #E5E5E5;
+  }
+  
+  .kallro-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .external-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+  }
+  
+  .with-border {
+    border-bottom: 1px solid #E5E5E5;
+  }
+  
+  .text-container {
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    overflow: visible;
+    transform: translateZ(0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .text-container > * {
+    height: 24px;
+    line-height: 24px;
+    display: block;
+    position: relative;
+    top: 0;
+    transform: translateZ(0);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .text-container span,
+  .text-container div {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+  }

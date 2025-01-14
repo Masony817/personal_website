@@ -1,13 +1,15 @@
 import './index.css'
-import ProfileSide from './components/profile_side'
+import ProfileSide from './components/ProfileSide/profileSide'
 
 function App() {
   return (
     <div style={{
       display: 'grid',
       gridTemplateColumns: '1fr 1fr 1fr 1fr',
-      height: '100vh',
+      minHeight: '100vh',
       width: '100vw',
+      overflowY: 'auto',
+      overflowX: 'hidden',
     }}>
       {/* Left Section */}
       <div style={{
@@ -37,4 +39,3 @@ function App() {
 }
 
 export default App;
-
