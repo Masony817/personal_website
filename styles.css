@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.markdown-content {
+    text-align: left;
+    line-height: 1.6;
+    color: #444;
+}
+
+.markdown-content p {
+    margin-bottom: 1rem;
+}
+
+.markdown-content ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+.markdown-content li {
+    margin-bottom: 0.5rem;
+}
+
+.markdown-content img {
+    width: 24px;
+    height: 24px;
+    border-radius: 10%;
+    object-fit: fill;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.profile-pic {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center 80%;
+
+}
+
+/* Specific styling for the social media logos */
+.markdown-content p:nth-child(5) img {
+    margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+    body {
+        align-items: flex-start;
+        padding-top: 2rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .container {
+        padding: 1rem;
+    }
+} 
