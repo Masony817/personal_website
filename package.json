@@ -1,0 +1,11 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "Mason Yarbrough's personal website",
+  "scripts": {
+    "build": "echo 'No build step required'"
+  },
+  "engines": {
+    "node": ">=14.x"
+  }
+} 
