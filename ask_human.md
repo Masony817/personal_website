@@ -2,7 +2,7 @@
 
 # ask-human mcp
 
- i just shipped a tiny thing that keeps your ai from hallucinating and gives it an escape route when confused or issues arise
+I just shipped a tiny thing that keeps your ai from hallucinating and gives it an escape route when confused or issues arise
 
 ## the pain:
 
@@ -10,11 +10,11 @@ ai blurts out an endpoint that never existed
 
 the agent makes assumptions that are simply not true and has false confidence
 
-repeat x100 errors and your day is spent debugging false confidence and issuses when i simply could as you a question
+repeat x100 errors and your day is spent debugging false confidence and issues when I simply could ask you a question
 
 ## the fix — ask-human mcp:
 
-a mcp server that lets the agent raise its hand instead of hallucinating. feels like mentoring a sharp intern who actually asks before guessing.
+an mcp server that lets the agent raise its hand instead of hallucinating. feels like mentoring a sharp intern who actually asks before guessing.
 
 
 ```
@@ -43,9 +43,9 @@ you drop:
 answer: POST /api/v2/auth/login
 ```
 
-boom—flow continues and hopefully the issues are sovled
+boom flow continues and hopefully the issues are solved
 
-## why its good:
+## why it's good:
 
 - `pip install ask-human-mcp` → done
 - zero config, cross-platform
@@ -58,7 +58,7 @@ boom—flow continues and hopefully the issues are sovled
 
 ```bash
 pip install ask-human-mcp
-ask-human-mcp
+ask-human-mcp --help
 ```
 
 `.cursor/mcp.json`:

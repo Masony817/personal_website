@@ -78,7 +78,7 @@ h1 {
     line-height: 1.7;
 }
 
-/* Modern code blocks */
+/* Modern code blocks - simplified for plain markdown */
 .markdown-content pre {
     background-color: #0f172a;
     border-radius: 8px;
@@ -87,7 +87,34 @@ h1 {
     overflow-x: auto;
     border: 1px solid #1e293b;
     position: relative;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
+
+/* Add language label for any code block with a class */
+.markdown-content pre code[class*="language-"]::before {
+    content: attr(class);
+    content: attr(class) " ";
+    position: absolute;
+    top: 0.5rem;
+    right: 0.75rem;
+    color: #64748b;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: #1e293b;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #334155;
+}
+
+/* Extract just the language name from class */
+.markdown-content pre code.language-bash::before { content: "BASH"; }
+.markdown-content pre code.language-json::before { content: "JSON"; }
+.markdown-content pre code.language-javascript::before { content: "JS"; }
+.markdown-content pre code.language-python::before { content: "PYTHON"; }
+.markdown-content pre code.language-markdown::before { content: "MD"; }
+.markdown-content pre code.language-shell::before { content: "SHELL"; }
 
 .markdown-content pre code {
     background-color: transparent;
@@ -98,7 +125,10 @@ h1 {
     line-height: 1.6;
     color: #e2e8f0;
     font-weight: 400;
+    display: block;
 }
+
+/* Clean, simple styling */
 
 /* Inline code */
 .markdown-content code {

@@ -19,13 +19,13 @@
     </div>
 
     <script>
-        // Configure marked options
+        // Simple markdown parsing
         marked.setOptions({
             gfm: true,
             breaks: true
         });
         
-        // Configure renderer to open links in new tabs
+        // Open links in new tabs
         const renderer = new marked.Renderer();
         renderer.link = function(href, title, text) {
             const link = marked.Renderer.prototype.link.apply(this, arguments);
@@ -34,11 +34,10 @@
 
         marked.setOptions({ renderer });
         
-        // Fetch the markdown content
+        // Load and display content
         fetch('content.md')
             .then(response => response.text())
             .then(text => {
-                // Convert markdown to HTML and insert into the page
                 document.getElementById('content').innerHTML = marked.parse(text);
             })
             .catch(error => {

@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../styles.css?v=2">
+    <link rel="stylesheet" href="../../styles.css?v=4">
     <!-- Markdown parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
@@ -18,13 +18,13 @@
     </div>
 
     <script>
-        // Configure marked options
+        // Simple markdown parsing - no complex highlighting
         marked.setOptions({
             gfm: true,
             breaks: true
         });
         
-        // Configure renderer to open links in new tabs
+        // Open links in new tabs
         const renderer = new marked.Renderer();
         renderer.link = function(href, title, text) {
             const link = marked.Renderer.prototype.link.apply(this, arguments);
@@ -33,11 +33,10 @@
 
         marked.setOptions({ renderer });
         
-        // Fetch the markdown content
+        // Load and display content
         fetch('../../ask_human.md')
             .then(response => response.text())
             .then(text => {
-                // Convert markdown to HTML and insert into the page
                 document.getElementById('content').innerHTML = marked.parse(text);
             })
             .catch(error => {
