@@ -4,7 +4,7 @@
 
 I just shipped a tiny thing that keeps your ai from hallucinating and gives it an escape route when confused or issues arise
 
-I built this while solo-founding [![](images/logos/kallro_logo.png)](https://kallro.com) Kallro to help with a lot of the issues i've found using cursor. 
+I built this while solo-founding [![](../../images/logos/kallro_logo.png)](https://kallro.com) Kallro to help with a lot of the issues i've found using cursor. 
 
 ## the pain:
 
