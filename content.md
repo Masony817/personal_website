@@ -14,7 +14,7 @@ checkout this cool mcp I built: [ask-human-mcp](https://masonyarbrough.com/blog/
 connect with me: [![](images/logos/instagram_logo.jpeg)](https://www.instagram.com/theyarbroughexperience_/) | [![](images/logos/x_logo.png)](https://x.com/masony817) | [![](images/logos/linkedin_logo.png)](https://www.linkedin.com/in/mason-n-yarbrough/)
 email: mason@kallro.com | masony817@gmail.com
 need to call? lets do it here [![](images/logos/cal_logo.png)](https://cal.com/mason-yarbrough/15min)
-buy me a coffee here [![](images/logos/bmc_logo.png)](https://www.buymeacoffee.com/masonyarbrough)
+buy me a coffee here [![](images/logos/bmc-logo.png)](https://www.buymeacoffee.com/masonyarbrough)
 
 some things i believe:
  - the purpose of humans is to live synchronously with animals, plants, and technology.
