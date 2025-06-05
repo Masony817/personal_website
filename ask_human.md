@@ -75,4 +75,4 @@ ask-human-mcp --help
 
 restart cursor and vibe
 
-**links:** [repo](https://github.com/masony817/ask-human-mcp) • [docs](https://github.com/masony817/ask-human-mcp) • [pypi](https://pypi.org/project/ask-human-mcp/) [buy me a coffee](https://coff.ee/masonyarbrough)
+**links:** [repo](https://github.com/masony817/ask-human-mcp) • [docs](https://github.com/masony817/ask-human-mcp) • [pypi](https://pypi.org/project/ask-human-mcp/) • [buy me a coffee](https://coff.ee/masonyarbrough)
