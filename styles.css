@@ -11,12 +11,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem; /* Add padding to prevent edge contact */
 }
 
 .container {
     text-align: center;
     max-width: 800px;
     padding: 2rem;
+    width: 100%; /* Ensure full width utilization */
 }
 
 h1 {
@@ -25,8 +27,6 @@ h1 {
     color: #333;
     margin-bottom: 1.5rem;
 }
-
-
 
 /* Modern Prompt Kit inspired styling */
 .markdown-content {
@@ -88,6 +88,8 @@ h1 {
     border: 1px solid #1e293b;
     position: relative;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    /* Ensure horizontal scrolling works on mobile */
+    -webkit-overflow-scrolling: touch;
 }
 
 /* Add language label for any code block with a class */
@@ -126,6 +128,8 @@ h1 {
     color: #e2e8f0;
     font-weight: 400;
     display: block;
+    /* Prevent text wrapping in code blocks */
+    white-space: pre;
 }
 
 /* Clean, simple styling */
@@ -140,6 +144,8 @@ h1 {
     font-size: 0.875em;
     font-weight: 500;
     border: 1px solid #e2e8f0;
+    /* Allow inline code to break on mobile if needed */
+    word-break: break-all;
 }
 
 /* Links with modern styling */
@@ -148,6 +154,10 @@ h1 {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s ease;
+    /* Better touch targets on mobile */
+    min-height: 44px;
+    display: inline-block;
+    line-height: 1.4;
 }
 
 .markdown-content a:hover {
@@ -208,7 +218,8 @@ h1 {
     height: 350px;
     object-fit: cover;
     object-position: center 80%;
-
+    border-radius: 8px; /* Add subtle border radius */
+    margin-bottom: 1.5rem; /* Add space below image */
 }
 
 /* Specific styling for the social media logos */
@@ -216,17 +227,212 @@ h1 {
     margin: 0 5px;
 }
 
+/* ENHANCED RESPONSIVE DESIGN */
+
+/* Tablet and smaller desktop screens */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+    
+    .markdown-content h1 {
+        font-size: 2.25rem;
+    }
+    
+    .markdown-content h2 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Large mobile/small tablet */
 @media (max-width: 768px) {
     body {
         align-items: flex-start;
-        padding-top: 2rem;
-    }
-    
-    h1 {
-        font-size: 2rem;
+        padding: 1rem 0.5rem;
+        min-height: auto;
     }
     
     .container {
         padding: 1rem;
+        max-width: 100%;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .profile-pic {
+        height: 280px;
+        margin-bottom: 1rem;
+    }
+    
+    .markdown-content h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .markdown-content h2 {
+        font-size: 1.5rem;
+        margin: 2rem 0 0.75rem 0;
+    }
+    
+    .markdown-content h3 {
+        font-size: 1.25rem;
+        margin: 1.5rem 0 0.5rem 0;
+    }
+    
+    .markdown-content h4 {
+        font-size: 1.125rem;
+        margin: 1.25rem 0 0.5rem 0;
+    }
+    
+    .markdown-content pre {
+        padding: 1rem;
+        margin: 1rem 0;
+        font-size: 0.8rem;
+        border-radius: 6px;
+    }
+    
+    .markdown-content pre code {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+    
+    .markdown-content code {
+        font-size: 0.8em;
+        padding: 0.1rem 0.3rem;
+    }
+    
+    .markdown-content ul {
+        padding-left: 1.25rem;
+    }
+    
+    .markdown-content p {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+    }
+    
+    /* Better touch targets for mobile */
+    .markdown-content a {
+        padding: 0.25rem 0;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    body {
+        padding: 0.5rem 0.25rem;
+    }
+    
+    .container {
+        padding: 0.75rem;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+        line-height: 1.3;
+    }
+    
+    .profile-pic {
+        height: 240px;
+        border-radius: 6px;
+    }
+    
+    .markdown-content h1 {
+        font-size: 1.75rem;
+        line-height: 1.3;
+        margin-bottom: 0.75rem;
+    }
+    
+    .markdown-content h2 {
+        font-size: 1.375rem;
+        margin: 1.5rem 0 0.5rem 0;
+    }
+    
+    .markdown-content h3 {
+        font-size: 1.125rem;
+        margin: 1.25rem 0 0.5rem 0;
+    }
+    
+    .markdown-content pre {
+        padding: 0.75rem;
+        margin: 0.75rem 0;
+        font-size: 0.75rem;
+        /* Hide language labels on very small screens */
+    }
+    
+    .markdown-content pre code[class*="language-"]::before {
+        display: none;
+    }
+    
+    .markdown-content pre code {
+        font-size: 0.75rem;
+    }
+    
+    .markdown-content code {
+        font-size: 0.75em;
+        word-break: break-word;
+    }
+    
+    .markdown-content p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+    
+    .markdown-content ul {
+        padding-left: 1rem;
+        margin: 1rem 0;
+    }
+    
+    .markdown-content li {
+        margin-bottom: 0.375rem;
+    }
+    
+    /* Adjust logo sizes for mobile */
+    .markdown-content img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 320px) {
+    .container {
+        padding: 0.5rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .profile-pic {
+        height: 200px;
+    }
+    
+    .markdown-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .markdown-content h2 {
+        font-size: 1.25rem;
+    }
+    
+    .markdown-content h3 {
+        font-size: 1.1rem;
+    }
+    
+    .markdown-content pre {
+        padding: 0.5rem;
+        font-size: 0.7rem;
+    }
+    
+    .markdown-content pre code {
+        font-size: 0.7rem;
+    }
+    
+    .markdown-content p {
+        font-size: 0.85rem;
     }
 } 
