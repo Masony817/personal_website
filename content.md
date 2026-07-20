@@ -1,29 +1,36 @@
-# Mason Yarbrough
+# hello, i'm mason.
 
-I’m 21, living in Seattle, and learning how to build things that move.
+2026.07.20 / Seattle
 
-I’m back in school at Bellevue College, studying toward robotics and rebuilding my foundation in math, physics, electronics, and mechanical systems. The University of Washington is the next step.
+I’m 21, living near Seattle, and in a pretty different part of life than when I first made this website.
 
-I spent my teens building software and startups. Kallro and GoLocal/Circliq are now sunset. I’m taking this chapter to slow down, earn a degree, and learn hardware properly. I bartend to pay the bills; it is my income, not my career.
+I spent most of my teens building software and trying to start companies. These days I’m back in school at Bellevue College, working through the math, physics, electronics, and mechanics I need for robotics. If things go to plan, the University of Washington is next.
 
-Right now I’m building a humanoid robot in the open. This website is the home for the research notes, build logs, essays, experiments, and failures that come with it.
+I wanted a reason to understand hardware all the way down, so I started building a humanoid robot. I’m learning the mechanical, electrical, controls, and simulation sides together. Most of it is still rough. I’m documenting the build in public anyway, including the false starts, because that is the part I usually want to see when I’m learning from someone else.
 
-## Things I believe
+My two startups, Kallro and GoLocal/Circliq, have both been sunset. I’m grateful I built them, but I don’t feel any urgency to immediately replace them with another company. For now I want to get a degree, learn hardware properly, and make things without needing every project to become a business.
 
-- Humans should live in closer relationship with animals, plants, and technology.
-- Abundant, accessible knowledge is one of the greatest things a society can build. It should be for everyone.
-- Where you find dopamine shapes how you live.
-- AI should expand human thinking, not replace it.
-- You can make things that change the world. That agency is part of being human.
-- Love is the important part: who you live with, what you do, and why you do it.
+I bartend to pay my bills. It is my income, not my career, so I’m leaving my main work off this site. This place is for the work I can share: research notes, essays, open hardware, photographs, and whatever I happen to be thinking through.
 
-## Before now
+## notes and ongoing work
 
-- Founder, Kallro — sunset.
-- Product engineer, Buy Nothing Project.
-- Founding engineer, AdScratch — sunset.
-- Founder, GoLocal/Circliq — sunset.
-- Computer science and physics student at UTC.
-- Years of restaurant, coffee, and service work to pay my way.
+- [the humanoid and other open hardware](https://github.com/masony817)
+- [longer writing and unfinished thoughts](https://masonyarbrough.substack.com/)
 
-Read my essays at <https://masonyarbrough.substack.com/> and follow my open builds at <https://github.com/masony817>.
+## a short record of what came before
+
+- Kallro — founder; AI phone agents for small businesses; sunset.
+- Buy Nothing Project — product engineer; software for a global gift-economy community.
+- AdScratch — founding engineer; early product and engineering; sunset.
+- GoLocal / Circliq — founder; a local-experience marketplace; sunset.
+- UTC — computer science and physics before I left to build full-time.
+- Service work — bartending, serving, coffee, shift management, and a lot of paying my way.
+
+## things i keep coming back to
+
+1. Humans should live in closer relationship with animals, plants, and technology.
+2. Abundant, accessible knowledge is one of the best things a society can build. It should be for everyone.
+3. Where you find dopamine shapes how you live.
+4. AI should expand human thinking, not replace it.
+5. Making things that change your surroundings is part of being human.
+6. Love is the important part: who you live with, what you do, and why you do it.
