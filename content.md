@@ -10,7 +10,7 @@ I’m back in school online through Bellevue College, filling in the math, physi
 
 ## what i'm doing now
 
-My main project outside school is a humanoid robot. I wanted one problem large enough to force me to learn the whole stack, so I’m working through the mechanical, electrical, controls, and simulation sides together. Most of it is still rough.
+My main project outside school is Finn, a humanoid robot. I wanted one problem large enough to force me to learn the whole stack, so I’m working through the mechanical, electrical, controls, and simulation sides together. Most of it is still rough.
 
 I’m building it in the open and writing down the experiments, mistakes, and decisions as I go. Finished projects are useful, but the half-working version is usually where the real information is.
 
@@ -26,7 +26,7 @@ If you’re interested in robotics, the build notes are the best place to start.
 
 ## notes and ongoing work
 
-- [the humanoid and other open hardware](https://github.com/masony817)
+- [Finn and other open hardware](https://github.com/masony817)
 - [longer writing and unfinished thoughts](https://masonyarbrough.substack.com/)
 
 ## a short record of what came before
