@@ -1,19 +1,14 @@
-# Personal Website
+# Mason Yarbrough — personal website
 
-A simple personal website that displays "mason yarbrough" in Lora font, centered on the page.
+A lightweight personal site for Mason's robotics work, open hardware build logs, research notes, essays, beliefs, and past projects.
 
-## Features
+## Local preview
 
-- Clean, minimalist design
-- Responsive layout
-- Uses Lora font from Google Fonts
+Open `index.html` directly or serve the directory with any static file server.
 
-## How to Use
+## Stack
 
-Simply open the `index.html` file in a web browser to view the website.
-
-## Technologies Used
-
-- HTML
-- CSS
-- Google Fonts 
+- Semantic HTML
+- Responsive CSS
+- Google Fonts
+- Vercel static hosting

@@ -1,36 +1,29 @@
-hi 👋
-i'm mason yarbrough, 19, chattanooga -> soon sf
+# Mason Yarbrough
 
-some cool things about me: 
- - im the founder of kallro, a platform for ai phone agents tailored to smbs
- - previously, i built golocal, a local-experience marketplace that used ai to scrape local businesses websites to surface everything happeneing in the city. 
- - i dropped out of the university of tennesse at chattanooga, where i was on track for a dual degree in computer science and physics.
-- i love the internet and think its the greatest invention since fire
+I’m 21, living in Seattle, and learning how to build things that move.
 
-beyond all that i am a designer, hobby photographer, and sometimes i write [![](images/logos/substack_logo.png)](https://masonyarbrough.substack.com/)
+I’m back in school at Bellevue College, studying toward robotics and rebuilding my foundation in math, physics, electronics, and mechanical systems. The University of Washington is the next step.
 
-checkout this cool mcp I built: [ask-human-mcp](https://masonyarbrough.com/blog/ask-human) - it gives your coding agent an escape hatch to ask questions 
+I spent my teens building software and startups. Kallro and GoLocal/Circliq are now sunset. I’m taking this chapter to slow down, earn a degree, and learn hardware properly. I bartend to pay the bills; it is my income, not my career.
 
-connect with me: [![](images/logos/instagram_logo.jpeg)](https://www.instagram.com/theyarbroughexperience_/) | [![](images/logos/x_logo.png)](https://x.com/masony817) | [![](images/logos/linkedin_logo.png)](https://www.linkedin.com/in/mason-n-yarbrough/)
-email: mason@kallro.com | masony817@gmail.com
-need to call? lets do it here [![](images/logos/cal_logo.png)](https://cal.com/mason-yarbrough/15min)
-buy me a coffee here [![](images/logos/bmc-logo.png)](https://www.buymeacoffee.com/masonyarbrough)
+Right now I’m building a humanoid robot in the open. This website is the home for the research notes, build logs, essays, experiments, and failures that come with it.
 
-some things i believe:
- - the purpose of humans is to live synchronously with animals, plants, and technology.
- - knowledge abstracted and in abundance is the greatest achievement that we can accomplish as a society. for everyone no if, ands, or buts.
-- dopamine is the life blood of humans, and where you get it from shapes how you live.
-- ai is meant to be a tool to supercharge knowledge work, not replace your own thinking
-- you can do anything; its your right as a human to shape the world
-- love is the most important thing - love who you live with, what you do, and why you do it.
+## Things I believe
 
-cv:
- - [![](images/logos/kallro_logo.png)](https://kallro.com) founder, kallro
-- [![](images/logos/buynothing_logo.webp)](https://buynothingproject.org) product engineer, buynothing
-- ![](images/logos/adscratch_logo.png) founding engineer, adscratch - died
-- ![](images/logos/golocal_logo.png) founder, golocal/circliq - died
-- [![](images/logos/utc_logo.png)](https://utc.edu) utc student
-- [![](images/logos/scotties_logo.png)](https://scottiesontheriver.net) server, scotties on the river
-- [![](images/logos/culture_logo.png)](https://culturecoffeecochatt.com/) barista, culture coffee
-- [![](images/logos/cfa_logo.png)](https://chick-fil-a.com) shift manager, chickfila
-- lots of other small resturant gigs trying to pay my bills 
+- Humans should live in closer relationship with animals, plants, and technology.
+- Abundant, accessible knowledge is one of the greatest things a society can build. It should be for everyone.
+- Where you find dopamine shapes how you live.
+- AI should expand human thinking, not replace it.
+- You can make things that change the world. That agency is part of being human.
+- Love is the important part: who you live with, what you do, and why you do it.
+
+## Before now
+
+- Founder, Kallro — sunset.
+- Product engineer, Buy Nothing Project.
+- Founding engineer, AdScratch — sunset.
+- Founder, GoLocal/Circliq — sunset.
+- Computer science and physics student at UTC.
+- Years of restaurant, coffee, and service work to pay my way.
+
+Read my essays at <https://masonyarbrough.substack.com/> and follow my open builds at <https://github.com/masony817>.
