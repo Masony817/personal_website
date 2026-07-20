@@ -6,48 +6,60 @@
     <meta name="description" content="Notes from Mason Yarbrough on robotics, open hardware, school, and the things he is learning along the way.">
     <meta name="theme-color" content="#f7f6f0">
     <title>Mason Yarbrough</title>
-    <link rel="icon" href="images/profile-pic.png" type="image/png">
-    <link rel="stylesheet" href="styles.css?v=7">
+    <link rel="icon" href="images/maple-leaf.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body>
     <div class="page">
         <header class="site-header">
-            <a class="site-name" href="#top">Mason Yarbrough</a>
+            <a class="site-name" href="#top">
+                <img class="site-mark" src="images/maple-leaf.svg" alt="">
+                <span>Mason Yarbrough</span>
+            </a>
             <nav aria-label="Main navigation">
+                <a href="#now">now</a>
                 <a href="#notes">notes</a>
                 <a href="#past">past</a>
-                <a href="#beliefs">beliefs</a>
             </nav>
         </header>
 
         <main id="top">
             <article class="entry" aria-labelledby="entry-title">
-                <p class="entry-meta"><time datetime="2026-07-20">2026.07.20</time> / Seattle</p>
+                <p class="entry-meta"><time datetime="2026-07-20">2026.07.20</time> / a note for whoever found this</p>
+                <h1 id="entry-title">hello, i’m mason.</h1>
+                <p class="entry-lead">If you found this through something I built, this page is the short version of who I am and what I’m trying to learn.</p>
+                <p>My background is mostly in software. I spent a good part of my teens building products, working at startups, and trying to start a couple of my own. Lately my attention has moved toward robotics: the place where code has to deal with motors, mass, friction, noisy sensors, and the rest of the physical world.</p>
+                <p>I’m back in school online through <a href="https://www.bellevuecollege.edu/" target="_blank" rel="noopener noreferrer">Bellevue College</a>, filling in the math, physics, electronics, and mechanics I skipped over while I was busy shipping software. The plan is to continue at the University of Washington after Bellevue.</p>
 
-                <div class="intro">
-                    <div class="intro-copy">
-                        <h1 id="entry-title">hello, i’m mason.</h1>
-                        <p>I’m 21, living near Seattle, and in a pretty different part of life than when I first made this website.</p>
-                        <p>I spent most of my teens building software and trying to start companies. These days I’m back in school at <a href="https://www.bellevuecollege.edu/" target="_blank" rel="noopener noreferrer">Bellevue College</a>, working through the math, physics, electronics, and mechanics I need for robotics. If things go to plan, the University of Washington is next.</p>
-                    </div>
-                    <figure class="portrait">
-                        <img src="images/profile-pic.png" alt="Portrait of Mason Yarbrough">
-                        <figcaption>me, recently</figcaption>
-                    </figure>
-                </div>
-
-                <p>I wanted a reason to understand hardware all the way down, so I started building a humanoid robot. I’m learning the mechanical, electrical, controls, and simulation sides together. Most of it is still rough. I’m documenting the build in public anyway, including the false starts, because that is the part I usually want to see when I’m learning from someone else.</p>
-
-                <p>My two startups, Kallro and GoLocal/Circliq, have both been sunset. I’m grateful I built them, but I don’t feel any urgency to immediately replace them with another company. For now I want to get a degree, learn hardware properly, and make things without needing every project to become a business.</p>
-
-                <p>I bartend to pay my bills. It is my income, not my career, so I’m leaving my main work off this site. This place is for the work I can share: research notes, essays, open hardware, photographs, and whatever I happen to be thinking through.</p>
-
-                <p class="aside"><span>※</span> This page will probably keep changing as I do. That feels more honest than pretending it is a finished biography.</p>
+                <figure class="field-photo">
+                    <img src="images/seattle-hike.webp" alt="Mason standing on a mountain trail surrounded by trees" width="1600" height="1067">
+                    <figcaption>a trail outside Seattle, June 2026</figcaption>
+                </figure>
             </article>
+
+            <section id="now" aria-labelledby="now-title">
+                <div class="section-heading">
+                    <p class="section-number">01</p>
+                    <h2 id="now-title">what i’m doing now</h2>
+                </div>
+                <p>My main project outside school is a humanoid robot. I wanted one problem large enough to force me to learn the whole stack, so I’m working through the mechanical, electrical, controls, and simulation sides together. Most of it is still rough.</p>
+                <p>I’m building it in the open and writing down the experiments, mistakes, and decisions as I go. Finished projects are useful, but the half-working version is usually where the real information is.</p>
+                <p>My two startups, Kallro and GoLocal/Circliq, have both been sunset. I’m glad I built them. I also don’t feel much urgency to replace them with another company. For now I want to get a degree, learn hardware properly, and make things without needing every project to become a business.</p>
+                <p>I bartend to pay my bills. It is my income, not my career, so I leave my main work off this site. This place is for the work I can share.</p>
+            </section>
+
+            <section class="reader-note" aria-labelledby="reader-title">
+                <div class="section-heading">
+                    <p class="section-number">02</p>
+                    <h2 id="reader-title">if you’re here because of my work</h2>
+                </div>
+                <p>I like useful problems that sit between software and hardware, especially when they require learning in public and explaining the system clearly. I have years of experience shipping software; I’m now deliberately adding the physical half.</p>
+                <p>If you’re interested in robotics, the build notes below are the best place to start. If you’re thinking about hiring me or working on something together, look through <a href="https://github.com/masony817" target="_blank" rel="noopener noreferrer">what I’ve built</a> and <a href="mailto:masony817@gmail.com">send me a note</a>. If you just wanted to know who was behind something you found, the rest of this page is probably enough.</p>
+            </section>
 
             <section id="notes" aria-labelledby="notes-title">
                 <div class="section-heading">
-                    <p class="section-number">01</p>
+                    <p class="section-number">03</p>
                     <h2 id="notes-title">notes and ongoing work</h2>
                 </div>
                 <p>I’m using this site as an index for things that are useful before they are polished: experiments, build logs, reading notes, and longer essays.</p>
@@ -61,12 +73,12 @@
                         <a href="https://masonyarbrough.substack.com/" target="_blank" rel="noopener noreferrer">longer writing and unfinished thoughts ↗</a>
                     </li>
                 </ul>
-                <p class="small-note">More will live here directly as I work out a better habit for publishing notes.</p>
+                <p class="small-note">More will live here directly as I get better at publishing notes.</p>
             </section>
 
             <section id="past" aria-labelledby="past-title">
                 <div class="section-heading">
-                    <p class="section-number">02</p>
+                    <p class="section-number">04</p>
                     <h2 id="past-title">a short record of what came before</h2>
                 </div>
                 <p>I still want to keep track of the older work. It mattered, even if it is no longer the main thing.</p>
@@ -100,7 +112,7 @@
 
             <section id="beliefs" aria-labelledby="beliefs-title">
                 <div class="section-heading">
-                    <p class="section-number">03</p>
+                    <p class="section-number">05</p>
                     <h2 id="beliefs-title">things i keep coming back to</h2>
                 </div>
                 <ol class="beliefs">
@@ -115,7 +127,7 @@
 
             <section class="elsewhere" aria-labelledby="elsewhere-title">
                 <div class="section-heading">
-                    <p class="section-number">04</p>
+                    <p class="section-number">06</p>
                     <h2 id="elsewhere-title">elsewhere</h2>
                 </div>
                 <p><a href="https://github.com/masony817" target="_blank" rel="noopener noreferrer">github</a> / <a href="https://masonyarbrough.substack.com/" target="_blank" rel="noopener noreferrer">essays</a> / <a href="https://www.instagram.com/theyarbroughexperience_/" target="_blank" rel="noopener noreferrer">instagram</a> / <a href="https://x.com/masony817" target="_blank" rel="noopener noreferrer">x</a> / <a href="mailto:masony817@gmail.com">email</a></p>
@@ -125,7 +137,7 @@
 
         <footer>
             <p>last revised <time datetime="2026-07-20">2026.07.20</time></p>
-            <p>Seattle, WA</p>
+            <img class="footer-mark" src="images/maple-leaf.svg" alt="Red maple leaf">
         </footer>
     </div>
 </body>

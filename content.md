@@ -1,16 +1,28 @@
 # hello, i'm mason.
 
-2026.07.20 / Seattle
+2026.07.20 / a note for whoever found this
 
-I’m 21, living near Seattle, and in a pretty different part of life than when I first made this website.
+If you found this through something I built, this page is the short version of who I am and what I’m trying to learn.
 
-I spent most of my teens building software and trying to start companies. These days I’m back in school at Bellevue College, working through the math, physics, electronics, and mechanics I need for robotics. If things go to plan, the University of Washington is next.
+My background is mostly in software. I spent a good part of my teens building products, working at startups, and trying to start a couple of my own. Lately my attention has moved toward robotics: the place where code has to deal with motors, mass, friction, noisy sensors, and the rest of the physical world.
 
-I wanted a reason to understand hardware all the way down, so I started building a humanoid robot. I’m learning the mechanical, electrical, controls, and simulation sides together. Most of it is still rough. I’m documenting the build in public anyway, including the false starts, because that is the part I usually want to see when I’m learning from someone else.
+I’m back in school online through Bellevue College, filling in the math, physics, electronics, and mechanics I skipped over while I was busy shipping software. The plan is to continue at the University of Washington after Bellevue.
 
-My two startups, Kallro and GoLocal/Circliq, have both been sunset. I’m grateful I built them, but I don’t feel any urgency to immediately replace them with another company. For now I want to get a degree, learn hardware properly, and make things without needing every project to become a business.
+## what i'm doing now
 
-I bartend to pay my bills. It is my income, not my career, so I’m leaving my main work off this site. This place is for the work I can share: research notes, essays, open hardware, photographs, and whatever I happen to be thinking through.
+My main project outside school is a humanoid robot. I wanted one problem large enough to force me to learn the whole stack, so I’m working through the mechanical, electrical, controls, and simulation sides together. Most of it is still rough.
+
+I’m building it in the open and writing down the experiments, mistakes, and decisions as I go. Finished projects are useful, but the half-working version is usually where the real information is.
+
+My two startups, Kallro and GoLocal/Circliq, have both been sunset. I’m glad I built them. I also don’t feel much urgency to replace them with another company. For now I want to get a degree, learn hardware properly, and make things without needing every project to become a business.
+
+I bartend to pay my bills. It is my income, not my career, so I leave my main work off this site. This place is for the work I can share.
+
+## if you're here because of my work
+
+I like useful problems that sit between software and hardware, especially when they require learning in public and explaining the system clearly. I have years of experience shipping software; I’m now deliberately adding the physical half.
+
+If you’re interested in robotics, the build notes are the best place to start. If you’re thinking about hiring me or working on something together, look through what I’ve built and send me a note. If you just wanted to know who was behind something you found, the rest of this page is probably enough.
 
 ## notes and ongoing work
 
