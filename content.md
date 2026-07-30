@@ -1,12 +1,12 @@
 # hello, i'm mason.
 
-2026.07.20 / a note for whoever found this
+2026.07.30 / a note for whoever found this
 
 If you found this through something I built, this page is the short version of who I am and what I’m trying to learn.
 
 My background is mostly in software. I spent a good part of my teens building products, working at startups, and trying to start a couple of my own. Lately my attention has moved toward robotics: the place where code has to deal with motors, mass, friction, noisy sensors, and the rest of the physical world.
 
-I’m back in school online through Bellevue College, filling in the math, physics, electronics, and mechanics I skipped over while I was busy shipping software. The plan is to continue at the University of Washington after Bellevue.
+I’m finishing my undergraduate degree at the University of Tennessee at Chattanooga. Alongside it, I’m filling in the math, physics, electronics, and mechanics I rushed past while I was busy shipping software. After that, I’m planning to pursue a master’s at Georgia Tech.
 
 ## what i'm doing now
 
@@ -35,7 +35,6 @@ If you’re interested in robotics, the build notes are the best place to start.
 - Buy Nothing Project — product engineer; software for a global gift-economy community.
 - AdScratch — founding engineer; early product and engineering; sunset.
 - GoLocal / Circliq — founder; a local-experience marketplace; sunset.
-- UTC — computer science and physics before I left to build full-time.
 - Service work — bartending, serving, coffee, shift management, and a lot of paying my way.
 
 ## things i keep coming back to
