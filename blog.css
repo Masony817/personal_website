@@ -1,0 +1,419 @@
+/* post-specific layout, loaded on top of styles.css */
+
+body {
+    overflow-x: clip;
+}
+
+.post-page {
+    width: min(760px, calc(100% - 40px));
+}
+
+/* ---------- masthead ---------- */
+
+.post-header {
+    padding-bottom: 34px;
+    border-bottom: 1px solid var(--ink);
+}
+
+.post-kicker {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    margin: 0 0 26px;
+}
+
+.post-kicker span {
+    color: var(--mark);
+}
+
+.post-header h1 {
+    max-width: 15ch;
+    margin-bottom: 20px;
+}
+
+.post-dek {
+    max-width: 34ch;
+    margin: 0;
+    font-size: clamp(1.12rem, 2.6vw, 1.3rem);
+    line-height: 1.45;
+    letter-spacing: -0.012em;
+}
+
+.post-byline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    margin: 30px 0 0;
+}
+
+.post-byline a {
+    color: inherit;
+}
+
+/* ---------- prose column ---------- */
+
+.post-body {
+    counter-reset: figure;
+    padding-top: 38px;
+}
+
+.post-body > p,
+.post-body > h2,
+.post-body > h3,
+.post-body > ul,
+.post-body > ol,
+.post-body > .post-note,
+.post-body > .section-heading {
+    max-width: 645px;
+}
+
+.post-body > p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+}
+
+.post-body > .section-heading {
+    margin-top: 62px;
+}
+
+.post-body > .section-heading + p {
+    margin-top: 0;
+}
+
+.post-body h3 {
+    margin: 40px 0 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+.post-body strong {
+    font-weight: 600;
+}
+
+/* ---------- status block ---------- */
+
+.status-block {
+    margin: 26px 0 0;
+    padding: 16px 0 18px;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.status-block p:last-child {
+    margin-bottom: 0;
+}
+
+.status-label {
+    margin: 0 0 8px;
+    color: var(--mark);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.status-list {
+    display: grid;
+    grid-template-columns: 128px minmax(0, 1fr);
+    gap: 2px 20px;
+    margin: 0;
+    font-size: 0.94rem;
+}
+
+.status-list dt {
+    color: var(--muted);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding-top: 0.28em;
+}
+
+.status-list dd {
+    margin: 0;
+}
+
+/* ---------- pull-out note ---------- */
+
+.post-note {
+    margin: 36px 0;
+    padding: 16px 0 17px 18px;
+    border-left: 2px solid var(--mark);
+    color: #4c4c45;
+    font-size: 0.96rem;
+}
+
+.post-note p:last-child {
+    margin-bottom: 0;
+}
+
+/* ---------- figures ---------- */
+
+.fig {
+    margin: 46px 0;
+    counter-increment: figure;
+}
+
+.fig img,
+.fig video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--line);
+    background: #edece5;
+}
+
+/* hanging indent: the figure number sits in the gutter, caption text wraps past it */
+.fig figcaption {
+    margin-top: 10px;
+    padding-left: 72px;
+    text-indent: -72px;
+    color: var(--muted);
+    font-size: 0.82rem;
+    line-height: 1.55;
+    letter-spacing: 0;
+    text-align: left;
+    text-transform: none;
+}
+
+.fig figcaption::before {
+    content: "fig. " counter(figure, decimal-leading-zero);
+    display: inline-block;
+    width: 72px;
+    color: var(--mark);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-indent: 0;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.fig--bleed {
+    width: min(calc(100vw - 48px), 1040px);
+    margin-left: calc(50% - min(calc(50vw - 24px), 520px));
+}
+
+.fig--inset {
+    max-width: 400px;
+}
+
+/* tall images get capped by viewport height instead of column width */
+.fig--portrait {
+    width: fit-content;
+    max-width: 100%;
+    margin-inline: auto;
+}
+
+.fig--portrait img {
+    width: auto;
+    max-width: 100%;
+    max-height: min(78vh, 860px);
+    margin: 0 auto;
+}
+
+/* two panes side by side, natural heights sharing a bottom edge */
+.fig--split .fig-pair {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    align-items: end;
+}
+
+/* opt-in with fig--split: crop both panes to one height so the pair reads as a single block.
+   only use it where cropping the edges of an image is harmless. */
+.fig--match .fig-pair {
+    align-items: stretch;
+}
+
+.fig--match .fig-pair > * {
+    height: 100%;
+}
+
+.fig--match .fig-pair img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.fig-zoom {
+    display: block;
+    line-height: 0;
+}
+
+.fig-zoom:focus-visible {
+    outline: 1px solid var(--mark);
+    outline-offset: 3px;
+}
+
+.fig--stack .fig-pair {
+    display: grid;
+    gap: 14px;
+}
+
+/* ---------- share + close ---------- */
+
+.post-end {
+    margin-top: 72px;
+    padding-top: 22px;
+    border-top: 1px solid var(--ink);
+}
+
+.post-end p {
+    max-width: 645px;
+    font-size: 0.96rem;
+}
+
+.share-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin: 26px 0 0;
+}
+
+.share-label {
+    margin: 0 4px 0 0;
+    color: var(--muted);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.share-row a,
+.share-row button {
+    padding: 6px 13px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--ink);
+    font-family: inherit;
+    font-size: 0.82rem;
+    line-height: 1.4;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.share-row a:hover,
+.share-row a:focus-visible,
+.share-row button:hover,
+.share-row button:focus-visible {
+    border-color: var(--mark);
+    color: var(--mark);
+}
+
+.post-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 14px;
+    margin-top: 56px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+    font-size: 0.9rem;
+}
+
+/* ---------- blog index ---------- */
+
+.post-list {
+    margin: 34px 0 0;
+    padding: 0;
+    border-top: 1px solid var(--ink);
+    list-style: none;
+}
+
+.post-list li {
+    display: grid;
+    grid-template-columns: 128px minmax(0, 1fr);
+    gap: 8px 20px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.post-list .post-date {
+    padding-top: 0.3em;
+    color: var(--muted);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.post-list h2 {
+    margin: 0 0 6px;
+    font-size: 1.12rem;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+}
+
+.post-list h2 a {
+    color: var(--ink);
+    text-decoration: none;
+}
+
+.post-list h2 a:hover,
+.post-list h2 a:focus-visible {
+    color: var(--mark);
+}
+
+.post-list p {
+    margin: 0;
+    color: #5e5e57;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 620px) {
+    .post-page {
+        width: min(100% - 30px, 760px);
+    }
+
+    .post-header h1 {
+        max-width: none;
+    }
+
+    .post-dek {
+        max-width: none;
+    }
+
+    .fig {
+        margin: 36px 0;
+    }
+
+    .fig--bleed {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .fig--split .fig-pair {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .fig--match .fig-pair img {
+        height: auto;
+        object-fit: fill;
+    }
+
+    .fig--portrait img {
+        max-height: none;
+    }
+
+    .fig figcaption {
+        padding-left: 0;
+        text-indent: 0;
+    }
+
+    .fig figcaption::before {
+        display: block;
+        width: auto;
+        margin-bottom: 3px;
+    }
+
+    .status-list {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 2px;
+    }
+
+    .status-list dd {
+        margin-bottom: 10px;
+    }
+
+    .post-list li {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
