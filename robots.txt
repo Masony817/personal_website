@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# authoring sources: markdown originals and the cross-post staging page.
+# they duplicate /blog content, so keep them out of the index.
+Disallow: /entries/
