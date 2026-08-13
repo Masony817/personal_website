@@ -43,6 +43,22 @@ URLs have no trailing slash (`trailingSlash: false` in `vercel.json`), so a post
 
 The share buttons and the copy-link button need no per-post editing: `blog.js` rebuilds them from the page's canonical URL and `og:title`.
 
+## Analytics
+
+Vercel Web Analytics, wired into the `<head>` of every page. It has to be switched on under the project's **Analytics** tab, otherwise `/_vercel/insights/script.js` 404s (which it always does locally, harmlessly). It is cookieless, so no consent banner.
+
+Every plan collects pageviews, unique visitors, referrers, countries, and devices. That is the Substack-dashboard equivalent, and referrers are what separate Hacker News from X from Substack.
+
+`blog.js` also emits three named events on post pages:
+
+| event | fires when | data |
+| --- | --- | --- |
+| `read_depth` | reader passes 25 / 50 / 75 / 100% of `.post-body` | `depth`, `post` |
+| `share` | a share or copy-link button is clicked | `to`, `post` |
+| `outbound` | an off-site link is clicked | `host`, `post` |
+
+**Custom events require a Vercel Pro plan.** On Hobby they no-op silently and only the pageview numbers show up. If the Hobby event cap or the retention window becomes a problem, swap the two `<head>` lines for Cloudflare Web Analytics (free, no cap, pageviews only) or GoatCounter (free, keeps events). Nothing else has to change: `track()` in `blog.js` is the only call site.
+
 ## Stack
 
 - Semantic HTML
